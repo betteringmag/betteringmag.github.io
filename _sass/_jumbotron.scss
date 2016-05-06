@@ -1,0 +1,30 @@
+.jumbotron {
+	position: relative;
+	width: 100%;
+	height: 40vh;
+	background-color: $brand-color;
+	padding: 16px;
+}
+
+.jumbotron__h2 {
+	font-family: "Muli", sans-serif;
+	font-weight: 500;
+	font-size: 32px;
+	margin-top: 10%;
+	margin-bottom: 5px;
+}
+
+.jumbotron__p {
+	font-size: 14px;
+}
+
+.jumbotron__social {
+	float: right;
+	margin-right: 10px;
+
+	i {
+		margin: 8px;
+		font-size: 26px;
+	}
+
+}

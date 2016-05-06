@@ -10,7 +10,7 @@ title: Bettering Magazine
 email: your-email@domain.com
 description: >
   Description here
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/magazine" # the subpath of your site, e.g. /blog
 url: "https:/bkazi.github.io/magazine" # the base hostname & protocol for your site
 twitter_username:
 instagram_username:

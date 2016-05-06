@@ -10,10 +10,9 @@
 		<meta name="theme-color" content="{{ site.brand-color }}">
 		<title>{{ site.title }}</title>
 		<meta name="description" content="{{ site.description }}">
-		<link rel="stylesheet" href="/css/main.css">
+		<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 		<link href='https://fonts.googleapis.com/css?family=Stoke|PT+Serif' rel='stylesheet' type='text/css'>
 		<link rel="canonical" href={{ site.url }}>
-		<base href="{{ site.url }}">
 	</head>
 
 	<body>

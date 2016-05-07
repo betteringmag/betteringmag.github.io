@@ -1,9 +1,19 @@
 <nav class="js-navbar nav-bar">
 	<ul class="nav-bar__tabs">
-		<li class="nav-bar__elem nav-bar__elem--active"><i class="fa fa-home"></i><p>Home</p></li>
-		<li class="nav-bar__elem"><i class="fa fa-image"></i><p>Gallery</p></li>
-		<li class="nav-bar__elem"><i class="fa fa-pencil-square-o"></i><p>Writing</p></li>
-		<li class="nav-bar__elem"><i class="fa fa-inbox"></i><p>Submission</p></li>
-		<li class="nav-bar__elem"><i class="fa fa-user"></i><p>About</p></li>
+		<li class="nav-bar__elem nav-bar__elem--active">
+			<a href="{{ "/index.html" | prepend: site.baseurl }}"><i class="fa fa-home"></i><p>Home</p></a>
+		</li>
+		<li class="nav-bar__elem">
+			<a href="{{ "/gallery/index.html" | prepend: site.baseurl }}"><i class="fa fa-image"></i><p>Gallery</p></a>
+		</li>
+		<li class="nav-bar__elem">
+			<i class="fa fa-pencil-square-o"></i><p>Writing</p>
+		</li>
+		<li class="nav-bar__elem">
+			<i class="fa fa-inbox"></i><p>Submission</p>
+		</li>
+		<li class="nav-bar__elem">
+			<i class="fa fa-user"></i><p>About</p>
+		</li>
 	</ul>
 </nav>

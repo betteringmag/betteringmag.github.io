@@ -6,7 +6,8 @@
 
 
 // Our variables
-$base-font-family: "PT Serif", "Times New Roman", serif;
+$base-font-family: "EB Garamond", "Times New Roman", serif;
+$heading-font-family: "Quicksand", "Helvetica", sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -45,17 +46,15 @@ $on-laptop:        800px;
     box-sizing: border-box;
 }
 
-body {
-    height: 100vh;
-}
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "https://fonts.googleapis.com/css?family=Quicksand:700|EB+Garamond",
         "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css",
         "grid",
         "base",
         "layout",
         "components",
         "jumbotron",
-        "navbar"
+        "navbar",
+        "imageGallery"
 ;

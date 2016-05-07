@@ -1,0 +1,69 @@
+.gallery {
+	padding: 20px 20px 20px 0px;
+}
+
+.image-view {
+	position: relative;
+	margin-bottom: 15px;
+
+	aside {
+		display: none;
+	}
+}
+
+.image-view__img {
+	width: 100%;
+	height: auto;
+}
+
+.lightbox-container {
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: none;
+
+	&::before {
+		content: '';
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.3);
+	}
+}
+
+.lightbox {
+	position: relative;
+	background-color: rgb(226, 226, 226);
+	padding: 10px;
+	padding-top: 23px;
+	will-change: transform;
+}
+
+.lightbox-container--visible {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: auto;
+}
+
+.lightbox__close {
+	position: absolute;
+	right: 5px;
+	top: 3px;
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 18px;
+}
+
+// .image-view__name {
+// 	position: absolute;
+// 	bottom: 5px;
+// 	left: 25px;
+// }

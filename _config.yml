@@ -19,6 +19,9 @@ facebook_username:
 # Build settings
 markdown: kramdown
 
+# Path to images
+imageurl: "/img"
+
 sass:
     style: compressed
 

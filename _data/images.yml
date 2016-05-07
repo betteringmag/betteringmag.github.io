@@ -1,0 +1,23 @@
+- image_path: /photo1.jpg
+  name: Samuel Scrimshaw
+  info: Lorem ipsum dolor sit amet
+
+- image_path: /photo2.jpg
+  name: Erol Ahmed
+  info: Lorem ipsum dolor sit amet
+
+- image_path: /photo3.jpg
+  name: Vladmir Chuchadeev
+  info: Lorem ipsum dolor sit amet
+
+- image_path: /photo4.jpg
+  name: Drew Patrick Miller
+  info: Lorem ipsum dolor sit amet
+
+- image_path: /photo5.jpg
+  name: Patrick Tomasso
+  info: Lorem ipsum dolor sit amet
+
+- image_path: /photo6.jpg
+  name: Tim Gouw
+  info: Lorem ipsum dolor sit amet

@@ -1,7 +1,6 @@
 ---
 ---
 {% include js/navbar.js %}
-{% include js/imageViewer.js %}
 
 'use strict';
 const navbar = document.querySelector('.js-navbar');

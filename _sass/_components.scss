@@ -5,6 +5,12 @@
 	padding: 15px;
 }
 
+@media (min-width: 768px) {
+	.container {
+		max-width: 600px;
+	}
+}
+
 .intro {
 
 	h3 {

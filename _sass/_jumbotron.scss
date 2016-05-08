@@ -4,12 +4,19 @@
 	height: 75vw;
 	background-color: $brand-color;
 	padding: 16px;
+
+	.container {
+		height: 100%;
+		margin: 0 auto;
+		position: relative;
+		padding: 0;
+		padding-top: 20px;
+	}
 }
 
 .jumbotron__h2 {
 	font-family: $heading-font-family;
 	font-size: 32px;
-	margin-top: 10%;
 	margin-bottom: 5px;
 }
 
@@ -28,5 +35,25 @@
 		margin: 8px;
 		font-size: 22px;
 	}
+}
 
+@media screen and (min-width: 420px) {
+	.jumbotron {
+		height: 65vw;
+	}
+}
+@media screen and (min-width: 550px) {
+	.jumbotron {
+		height: 55vw;
+	}
+}
+@media screen and (min-width: 900px) {
+	.jumbotron {
+		height: 45vw;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.jumbotron {
+		height: 45vh;
+	}
 }

@@ -5,6 +5,7 @@
 .image-view {
 	position: relative;
 	margin-bottom: 15px;
+	cursor: pointer;
 
 	aside {
 		display: none;
@@ -39,11 +40,12 @@
 }
 
 .lightbox {
+	width: 100%;
+	max-width: 600px;
 	position: relative;
 	background-color: rgb(226, 226, 226);
 	padding: 10px;
 	padding-top: 23px;
-	will-change: transform;
 }
 
 .lightbox-container--visible {

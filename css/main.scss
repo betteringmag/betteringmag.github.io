@@ -55,6 +55,11 @@ $on-laptop:        800px;
         font-size: 18px;
     }
 }
+@media (min-width: 900px) {
+    :root {
+        font-size: 20px;
+    }
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import

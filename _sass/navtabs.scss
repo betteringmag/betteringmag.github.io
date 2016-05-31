@@ -1,0 +1,48 @@
+.navtabs {
+	display: none;
+	position: relative;
+}
+
+.navtabs__list {
+	display: table;
+	margin: 5px 15px 0px auto;
+	padding: 0;
+	list-style: none;
+}
+
+.navtabs__elem {
+	display: inline-block;
+	text-transform: uppercase;
+	font-family: $heading-font-family;
+	margin-left: 15px;
+
+	a {
+		text-decoration: none;
+	}
+
+	a:link::after {
+		content: '';
+    display: block;
+    background-color: #111;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all 0.2s ease-in;
+	}
+
+	a:hover::after {
+		transform: scaleX(1);
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.navtabs {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.navtabs__elem a:link::after {
+		background-color: #EED;
+	}
+}

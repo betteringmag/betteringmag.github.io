@@ -52,3 +52,9 @@ $active-color: darken($brand-color, 25%);
 .nav-bar--animatable {
 	transition: transform 0.2s ease-in-out;
 }
+
+@media screen and (min-width: 800px) {
+	.nav-bar {
+		display: none;
+	}
+}

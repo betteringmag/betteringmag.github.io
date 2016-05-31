@@ -1,10 +1,20 @@
+.gallery-header {
+	margin-left: 20px;
+	font-size: 2em;
+}
+
 .gallery {
-	padding: 20px 20px 20px 0px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 20px 20px 20px 20px;
 }
 
 .image-view {
+	flex: auto;
+	width: 200px;
 	position: relative;
-	margin-bottom: 15px;
+	margin: 7px;
 	cursor: pointer;
 
 	aside {
@@ -26,6 +36,7 @@
 	height: 100%;
 	overflow: hidden;
 	display: none;
+	z-index: 10;
 
 	&::before {
 		content: '';
@@ -42,10 +53,12 @@
 .lightbox {
 	width: 100%;
 	max-width: 600px;
+	max-height: 90%;
 	position: relative;
 	background-color: rgb(226, 226, 226);
 	padding: 10px;
 	padding-top: 23px;
+	overflow: auto;
 }
 
 .lightbox-container--visible {

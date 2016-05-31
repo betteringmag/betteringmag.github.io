@@ -25,19 +25,16 @@ class Navbar {
   }
 
   show() {
-    this.navbar.classList.add(this.animationClass);
     this.navbar.classList.remove(this.hiddenClass);
     this.navbar.addEventListener('transitionend', this.onTransitionEnd);
   }
 
   hide() {
-    this.navbar.classList.add(this.animationClass);
     this.navbar.classList.add(this.hiddenClass);
     this.navbar.addEventListener('transitionend', this.onTransitionEnd);
   }
 
   onTransitionEnd() {
-    this.navbar.classList.remove(this.animationClass);
     this.isTicking = false;
     this.navbar.removeEventListener('transitionend', this.onTransitionEnd);
   }

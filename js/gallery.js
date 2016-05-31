@@ -9,4 +9,6 @@ const ImgOptions = {
 	'visibleClass': 'lightbox-container--visible',
 	'closeButton': document.querySelector('.js-lightbox-close')
 }
-window.addEventListener('load', () => new ImageViewer(images, lightbox, lightboxContainer, ImgOptions));
+window.addEventListener('load', function () {
+	new ImageViewer(images, lightbox, lightboxContainer, ImgOptions);
+});

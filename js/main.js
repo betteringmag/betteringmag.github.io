@@ -9,4 +9,6 @@ const NavOptions = {
 	'hiddenClass': 'nav-bar--hidden'
 };
 
-window.addEventListener('load', () => new Navbar(navbar, NavOptions));
+window.addEventListener('load', function() {
+		 new Navbar(navbar, NavOptions);
+});

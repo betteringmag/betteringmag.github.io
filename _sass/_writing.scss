@@ -1,0 +1,45 @@
+.writing {
+    max-width: 800px;
+}
+
+.writing-card {
+    padding: 15px;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.writing-card__link {
+    color: inherit;
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+    &:visited {
+        color: inherit;
+    }
+}
+
+.writing-card__title {
+    font-family: $heading-font-family;
+    font-size: 1.4em;
+    border-bottom: 1px solid $brand-color;
+    padding: 2px;
+}
+
+.writing-card__title--author {
+    position: relative;
+    font-family:  $base-font-family;
+    font-size: 0.75em;
+    color: lighten($text-color, 20%);
+    float: right;
+}
+
+.writing-card__excerpt {
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 20px;
+    
+    p {
+        margin-bottom: 0;
+    }
+}

@@ -3,7 +3,9 @@
 	<div class="js-image-view image-view">
 		<img class="image-view__img" src="{{ item.image_path | prepend: site.imageurl | prepend: site.baseurl }}" />
 		<p class="image-view__name">{{ item.name }}</p>
-		<aside>{{item.info}}</aside>
+		{% if item.info %}
+			<aside>{{item.info}}</aside>
+		{% endif %}
 	</div>
 	{% endfor %}
 </div>

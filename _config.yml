@@ -7,9 +7,8 @@
 
 # Site settings
 title: Bettering Magazine
-email: your-email@domain.com
-description: >
-  Description here
+email: editor@betteringmagazine.co.uk
+description: Showcasing artistic creations whilst helping those in need
 baseurl: "/magazine" # the subpath of your site, e.g. /blog
 url: "https:/bkazi.github.io/magazine" # the base hostname & protocol for your site
 twitter_username:
@@ -26,3 +25,6 @@ sass:
     style: compressed
 
 brand-color: "#c2a972"
+
+excerpt_separator: <!--more-->
+permalink: /writing/:title

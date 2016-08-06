@@ -1,0 +1,12 @@
+<div class="writing container">
+    {% for post in site.posts %}
+        <div class="writing-card">
+            <a class="writing-card__link" href="{{ post.url }}">
+                <div class="writing-card__title">
+                    <span>{{ post.title }}</span> <span class="writing-card__title--author">{{post.author}}</span>
+                </div>
+                <div class="writing-card__excerpt">{{post.excerpt}}...</div>
+            </a>
+        </div>
+    {% endfor %}
+</div>

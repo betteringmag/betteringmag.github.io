@@ -60,6 +60,8 @@ class ImageViewer {
 	update () {
 		const currView = this.imageViews[this.currIdx];
 		this.lightboxImg.src = currView.getElementsByTagName('img')[0].src;
-		this.lightboxP.textContent = currView.getElementsByTagName('aside')[0].textContent;
+		const aside = currView.getElementsByTagName('aside');
+		if (aside.length !== 0)
+			this.lightboxP.textContent = aside[0].textContent;
 	}
 }

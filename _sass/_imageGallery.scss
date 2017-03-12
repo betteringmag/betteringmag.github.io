@@ -92,8 +92,7 @@
 	max-width: 600px;
 	max-height: 90%;
 	background-color: rgb(226, 226, 226);
-	padding: 10px;
-	padding-top: 23px;
+	padding: 30px 30px 10px 30px;
 	overflow: auto;
 	will-change: transform;
 	transform: scale(0.7);
@@ -122,4 +121,27 @@
 	font-size: 18px;
 	font-weight: 200;
 	line-height: 18px;
+	cursor: pointer;
+}
+
+.lightbox__left, .lightbox__right {
+	position: absolute;
+	font-size: 32px;
+	line-height: 32px;
+	font-weight: 600;
+	top: 50%;
+	cursor: pointer;
+
+	&.hide {
+		opacity: 0;
+		pointer-events: none;
+	}
+}
+
+.lightbox__left {
+	left: 10px;
+}
+
+.lightbox__right {
+	right: 10px;
 }

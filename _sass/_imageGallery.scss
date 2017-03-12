@@ -4,27 +4,58 @@
 }
 
 .gallery {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	display: block;
+	max-width: 1000px;
+	margin: 0 auto;
+	column-gap: 1em;
 	padding: 20px 20px 20px 20px;
+
+	@media only screen and (min-width: 400px) {
+		column-count: 2;
+	}
+
+	@media only screen and (min-width: 600px) {
+		column-count: 3;
+	}
+
+	@media only screen and (min-width: 900px) {
+		column-count: 4;
+	}
 }
 
 .image-view {
-	flex: auto;
-	width: 200px;
+	display: inline-block;
 	position: relative;
-	margin: 7px;
+	width: 100%;
+	margin: 0 0 1em;
 	cursor: pointer;
 
 	aside {
 		display: none;
+	}
+
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 40px;
+		width: 100%;
+		background-color: rgba(255,255,255,0.7);
 	}
 }
 
 .image-view__img {
 	width: 100%;
 	height: auto;
+}
+
+.image-view__name {
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 5px;
+	margin-left: 5px;
 }
 
 .lightbox-container {
@@ -76,9 +107,3 @@
 	font-weight: 200;
 	line-height: 18px;
 }
-
-// .image-view__name {
-// 	position: absolute;
-// 	bottom: 5px;
-// 	left: 25px;
-// }

@@ -87,10 +87,10 @@
 }
 
 .lightbox {
+	position: relative;
 	width: 100%;
 	max-width: 600px;
 	max-height: 90%;
-	position: relative;
 	background-color: rgb(226, 226, 226);
 	padding: 10px;
 	padding-top: 23px;
@@ -98,6 +98,12 @@
 	will-change: transform;
 	transform: scale(0.7);
 	transition: transform 200ms ease-in-out;
+}
+
+.lightbox__img {
+	display: block;
+	margin: 0 auto;
+	max-height: 82vh;
 }
 
 .lightbox-container--visible {

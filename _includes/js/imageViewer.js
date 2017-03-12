@@ -11,7 +11,6 @@ class ImageViewer {
 		}
 
 		this.onClick = this.onClick.bind(this);
-		this.show = this.show.bind(this);
 		this.hide = this.hide.bind(this);
 		this.blockClicks = this.blockClicks.bind(this);
 		this.update = this.update.bind(this);
@@ -35,33 +34,29 @@ class ImageViewer {
 		evt.stopPropagation();
 	}
 
-	show () {
-		this.lightboxContainer.classList.add(this.visibleClass);
-	}
-
 	hide () {
 		this.lightboxContainer.classList.remove(this.visibleClass);
 	}
 
 	onClick (evt) {
-		if (evt.target.nodeName === 'IMG') {
-			requestAnimationFrame(this.appear);
-			this.currIdx = this.imageViews.indexOf(evt.target.parentNode);
-			requestAnimationFrame(this.update);
-		}
+		if (!this.imageViews.includes(evt.target.parentNode)) return;
+
+		this.currIdx = this.imageViews.indexOf(evt.target.parentNode);
+		this.update();
+		this.appear();
 	}
 
 	appear () {
 		if (!this.lightboxContainer.classList.contains(this.visibleClass)) {
-			this.show();
+			this.lightboxContainer.classList.add(this.visibleClass);
 		}
 	}
 
 	update () {
 		const currView = this.imageViews[this.currIdx];
-		this.lightboxImg.src = currView.getElementsByTagName('img')[0].src;
-		const aside = currView.getElementsByTagName('aside');
-		if (aside.length !== 0)
+		this.lightboxImg.src = currView.querySelector('img').src;
+		const aside = currView.querySelector('aside');
+		if (aside && aside.length !== 0)
 			this.lightboxP.textContent = aside[0].textContent;
 	}
 }

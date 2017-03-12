@@ -1,7 +1,7 @@
 <div class="gallery">
 	{% for item in site.data.images %}
 	<div class="js-image-view image-view">
-		<img class="image-view__img" src="{{ item.image_path | prepend: site.imageurl | prepend: site.baseurl }}" />
+		<img class="image-view__img js-lazy-load" src="{{ item.image_src }}" data-img="{{ item.image_path | prepend: site.imageurl | prepend: site.baseurl }}"/>
 		<p class="image-view__name">{{ item.name }}</p>
 		{% if item.info %}
 			<aside>{{item.info}}</aside>

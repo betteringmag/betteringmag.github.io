@@ -43,12 +43,23 @@
 		height: 40px;
 		width: 100%;
 		background-color: rgba(255,255,255,0.7);
+		z-index: 1;
 	}
 }
 
 .image-view__img {
 	width: 100%;
 	height: auto;
+	opacity: 0;
+	transition: opacity 200ms ease-in-out;
+
+	&.js-lazy-load {
+		opacity: 1;
+	}
+
+	&.lazy-loaded {
+		opacity: 1;
+	}
 }
 
 .image-view__name {
@@ -56,6 +67,7 @@
 	bottom: 0;
 	margin-bottom: 5px;
 	margin-left: 5px;
+	z-index: 2;
 }
 
 .lightbox-container {

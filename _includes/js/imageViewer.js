@@ -64,7 +64,7 @@ class ImageViewer {
 
 	update () {
 		const currView = this.imageViews[this.currIdx];
-		this.lightboxImg.src = currView.querySelector('img').src;
+		this.lightboxImg.src = currView.querySelector('img').dataset.img;
 		const aside = currView.querySelector('p');
 		if (aside && aside.length !== 0) this.lightboxP.textContent = aside.textContent;
 

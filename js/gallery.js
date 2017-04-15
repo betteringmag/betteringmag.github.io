@@ -40,7 +40,9 @@ window.addEventListener('load', function () {
 		image.onload = (() => {
 			item.insertAdjacentElement('afterend', image);
 			requestAnimationFrame(() => {
-				image.classList.add('lazy-loaded');
+				requestAnimationFrame(() => {
+					image.classList.add('lazy-loaded');
+				});
 			});
 		});
 	});
